@@ -1,4 +1,4 @@
-package pl.sda.project.config;
+package pl.sda.project.aconfig;
 
 import org.springframework.context.annotation.*;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;

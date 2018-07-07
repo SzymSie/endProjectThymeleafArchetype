@@ -1,4 +1,4 @@
-package pl.sda.project.config;
+package pl.sda.project.aconfig;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;

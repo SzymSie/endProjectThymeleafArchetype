@@ -1,10 +1,8 @@
-package pl.sda.project.workers;
-
+package pl.sda.project.dao;
 
 import org.springframework.stereotype.Repository;
-import pl.sda.project.dao.BaseDao;
+import pl.sda.project.entity.Worker;
 
 @Repository
 public class WorkerDao extends BaseDao<Worker> {
-
 }
