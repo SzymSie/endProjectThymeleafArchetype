@@ -1,4 +1,4 @@
-package pl.sda.project.dao;
+package pl.sda.project.adao;
 
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,7 @@ import java.lang.reflect.Type;
 import java.util.List;
 
 @Transactional
-public abstract class BaseDao<T extends Serializable> {
+public abstract class BaseDaoo<T extends Serializable> {
 
     public Class<T> clazz;
 
@@ -20,7 +20,7 @@ public abstract class BaseDao<T extends Serializable> {
 
 
     @SuppressWarnings("unchecked")
-    protected BaseDao() {
+    protected BaseDaoo() {
 
         Type t = getClass().getGenericSuperclass();
         Type arg;
@@ -80,7 +80,5 @@ public abstract class BaseDao<T extends Serializable> {
         getHibernateSession().delete(t);
 
     }
-
-
 
 }

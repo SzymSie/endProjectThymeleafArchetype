@@ -1,4 +1,4 @@
-package pl.sda.project.welcome;
+package pl.sda.project.awelcome;
 
 import java.util.Map;
 
@@ -16,7 +16,7 @@ public class WelcomeController {
     @RequestMapping("/")
     public String welcome(Map<String, Object> model) {
         model.put("message", this.message);
-        return "welcome";
+        return "awelcome";
     }
 
 }
