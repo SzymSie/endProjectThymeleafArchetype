@@ -10,6 +10,7 @@
     <link rel="stylesheet" th:href="@{/css/main.css}"
           href="css/main.css" />
 
+
 </head>
 <body>
 
@@ -33,10 +34,26 @@
 <div class="container">
 
     <div class="starter-template">
-        <h1>Spring Boot Web Thymeleaf Example</h1>
-        <h2>
-            <span th:text="'Message: ' + ${message}"></span>
-        </h2>
+        <table class="table table-bordered">
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Brand</td>
+                <td>Model</td>
+                <td>Body</td>
+                <td>Year</td>
+                <td>Status</td>
+            </tr>
+            <tr th:each="car : ${cars}">
+                <td th:text="${car.id}"></td>
+                <td th:text="${car.name}"></td>
+                <td th:text="${car.brand}"></td>
+                <td th:text="${car.model}"></td>
+                <td th:text="${car.body}"></td>
+                <td th:text="${car.year}"></td>
+                <td th:text="${car.status}"></td>
+            </tr>
+        </table>
     </div>
 
 </div>
