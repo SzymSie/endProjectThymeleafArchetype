@@ -26,7 +26,6 @@
                 <li><a href="#workers" th:href="@{/workers}">Workers</a></li>
                 <li><a href="#cars" th:href="@{/cars}">Cars</a></li>
 
-
             </ul>
         </div>
     </div>
@@ -37,15 +36,35 @@
     <div class="starter-template">
         <h3>Welcome, Enter The Employee Details</h3>
         <form:form method="POST"
-                   action="/addWorker" modelAttribute="worker">
+                   action="/addCar" modelAttribute="car">
             <table>
                 <tr>
-                    <td><form:label path="firstName">Name</form:label></td>
-                    <td><form:input path="firstName"/></td>
+                    <td><form:label path="id">Id</form:label></td>
+                    <td><form:input path="id"/></td>
                 </tr>
                 <tr>
-                    <td><form:label path="lastName">Id</form:label></td>
-                    <td><form:input path="lastName"/></td>
+                    <td><form:label path="name">Name</form:label></td>
+                    <td><form:input path="name"/></td>
+                </tr>
+                <tr>
+                    <td><form:label path="brand">Brand</form:label></td>
+                    <td><form:input path="brand"/></td>
+                </tr>
+                <tr>
+                    <td><form:label path="model">Model</form:label></td>
+                    <td><form:input path="model"/></td>
+                </tr>
+                <tr>
+                    <td><form:label path="body">Body</form:label></td>
+                    <td><form:input path="body"/></td>
+                </tr>
+                <tr>
+                    <td><form:label path="year">Year</form:label></td>
+                    <td><form:input path="year"/></td>
+                </tr>
+                <tr>
+                    <td><form:label path="status">Status</form:label></td>
+                    <td><form:input path="status"/></td>
                 </tr>
                 <tr>
                     <td><input type="submit" value="Submit"/></td>
