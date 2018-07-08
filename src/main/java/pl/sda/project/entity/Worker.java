@@ -13,7 +13,7 @@ public class Worker implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id", nullable = false)
-    private int id;
+    private long id;
 
     @Column(name = "firstname", nullable = false)
     private String firstName;

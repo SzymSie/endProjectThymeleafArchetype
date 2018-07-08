@@ -41,9 +41,10 @@ public class WorkerController {
 //        return workerService.getWorker(id);
 
 //        Optional<Worker> worker= workerDao.getById(id);
-        Worker worker = workerDao.getById(id);
-        model.addAttribute("worker", new Worker());
-        return "worker";
+        Worker workers = workerDao.getById(id);
+//        model.addAttribute("worker", new Worker());
+        model.addAttribute("workers", workers);
+        return "workers";
 
 
 
