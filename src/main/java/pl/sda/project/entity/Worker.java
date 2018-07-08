@@ -16,10 +16,10 @@ public class Worker implements Serializable {
     private int id;
 
     @Column(name = "firstname", nullable = false)
-    private String firstname;
+    private String firstName;
 
     @Column(name = "lastname", nullable = false)
-    private String lastname;
+    private String lastName;
 
     @Column(name = "position", nullable = false)
     private String position;
